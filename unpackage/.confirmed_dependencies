@@ -1,0 +1,53 @@
+{
+	"index.html": {
+		"resources": [
+			"css/index.css",
+			"js/swiper.jquery.js",
+			"js/swiper.animate1.0.2.min.js",
+			"js/zepto.min.js",
+			"css/swiper.min.css",
+			"js/resize.js",
+			"css/animate.min.css",
+			"font-icon/iconfont.woff",
+			"list.html",
+			"img/video.png",
+			"img/zb.png",
+			"img/list4.png",
+			"img/list3.png",
+			"img/banner3.jpg",
+			"img/banner2.jpg",
+			"img/list2.png",
+			"img/banner1.png",
+			"img/logo.png",
+			"img/zt.png",
+			"img/tj.png",
+			"img/list1.png",
+			"css/welcome.css"
+		],
+		"refer": [
+			"list.html"
+		]
+	},
+	"list.html": {
+		"resources": [
+			"xiangqing.html",
+			"img/ls-banner.png",
+			"img/bk.png",
+			"index.html"
+		],
+		"refer": [
+			"xiangqing.html",
+			"index.html"
+		]
+	},
+	"xiangqing.html": {
+		"resources": [
+			"img/gt.png",
+			"img/xw-img1.png",
+			"list.html"
+		],
+		"refer": [
+			"list.html"
+		]
+	}
+}
