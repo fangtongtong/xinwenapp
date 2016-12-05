@@ -10,240 +10,242 @@
     <script src="js/zepto.min.js"></script>
     <script src="js/swiper.jquery.js"></script>
     <script src="js/swiper.animate1.0.2.min.js"></script>
+    <script src="js/resize.js"></script>
 </head>
 <body>
-<div class="swiper-container">
-    <div class="swiper-wrapper">
-        <div class="swiper-slide index">
-            <div class="head">
+<div class="index">
+    <div class="head">
                 <div class="iconfont liebiao"></div>
                 <div class="logo"></div>
                 <div class="iconfont lx"></div>
             </div>
-            <div class="banner">
-                <div class="nav">
-                    <div><a href="">头条</a></div>
-                    <div><a href="">娱乐</a></div>
-                    <div><a href="">体育</a></div>
-                    <div><a href="">汽车</a></div>
-                    <div><a href="">科技</a></div>
-                    <div class="iconfont dh-up"></div>
-                </div>
-                <div class="lunbo">
-                    <div><img src="img/banner1.png" alt=""></div>
+    <!--导航-->
+    <div class="swiper-container swiper-container-horizontal nav" style="height:0.74rem" id="swiper-container1">
+        <div class="swiper-wrapper nav-inner">
+            <div class="swiper-slide">头条</div>
+            <div class="swiper-slide">要闻</div>
+            <div class="swiper-slide">娱乐</div>
+            <div class="swiper-slide">体育</div>
+            <div class="swiper-slide">网易号</div>
+            <div class="swiper-slide">太原</div>
+            <div class="swiper-slide">视频</div>
+            <div class="swiper-slide">财经</div>
+            <div class="swiper-slide">科技</div>
+            <div class="swiper-slide">汽车</div>
+            <div class="swiper-slide">时尚</div>
+            <div class="swiper-slide">图片</div>
+            <div class="swiper-slide">直播</div>
+        </div>
+    </div>
+    <!--banner-->
+    <div class="swiper-container swiper-container-horizontal" id="swiper-container2">
+        <div class="swiper-wrapper" style="transition-duration: 0ms; transform: translate3d(0px, 0px, 0px);">
+            <div class="swiper-slide swiper-slide-active">
+                <div class="swiper-container" id="swiper-slide1">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><a href=""><img src="img/banner1.png" alt=""></a></div>
+                        <div class="swiper-slide"><a href=""><img src="img/banner2.jpg" alt=""></a></div>
+                        <div class="swiper-slide"><a href=""><img src="img/banner3.jpg" alt=""></a></div>
+                    </div>
                 </div>
                 <div class="shuoming">
                     <div class="tj"></div>
                     <div class="sm-title">脸谱阅后即焚应用排名下跌</div>
-                    <div class="dian">
-                        <div class="dd active"></div>
-                        <div class="dd"></div>
-                        <div class="dd"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <div class="xinwen">
+                    <div class="ls1">
+                        <div class="left"><img src="img/list1.png" alt=""></div>
+                        <div class="right">
+                            <div class="title">脸谱阅后即焚应用排名下跌</div>
+                            <div class="nr"><a href="">阅后即焚服务一度跻身App Store前50名免费应用排行榜。</a>
+                                <span>8907跟帖</span>
+                            </div>
+                            <div class="zt"></div>
+
+                        </div>
+
+                    </div>
+                    <div class="ls1">
+                        <div class="left"><img src="img/list2.png" alt=""></div>
+                        <div class="right">
+                            <div class="title">高速将构建新能源车快充网络</div>
+                            <div class="nr"><a href="">中国政府网指导意见，明确以发展纯电动汽车为主要战略。</a>
+                                <span>4.7万跟帖</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="ls1">
+                        <div class="left"><img src="img/list3.png" alt=""></div>
+                        <div class="right">
+                            <div class="title">诺基亚北京工厂裁3千人或撤出</div>
+                            <div class="nr"><a href="">上周五微软也已启动诺基亚北京工厂裁员计划，或将迁离北京。</a>
+                            </div>
+                            <div class="zb"></div>
+
+                        </div>
+
+                    </div>
+                    <div class="ls1">
+                        <div class="left"><img src="img/list4.png" alt=""></div>
+                        <div class="right">
+                            <div class="title">老罗致歉：锤子预约18万台？</div>
+                            <div class="nr"><a href="">锤子遇到严重的产能问题，而且良品率很低，品控太差。</a>
+                            </div>
+                            <div class="sp"></div>
+
+                        </div>
+
                     </div>
                 </div>
             </div>
-            <div class="xinwen">
-                <div class="ls1">
-                    <div class="left"><img src="img/list1.png" alt=""></div>
-                    <div class="right">
-                        <div class="title">脸谱阅后即焚应用排名下跌</div>
-                        <div class="nr"><a href="">阅后即焚服务一度跻身App Store前50名免费应用排行榜。</a>
-                            <span>8907跟帖</span>
-                        </div>
-                        <div class="zt"></div>
-
+            <div class="swiper-slide">
+                <div class="swiper-container" id="swiper-slide2">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><a href=""><img src="img/banner2.jpg" alt=""></a></div>
                     </div>
-
                 </div>
-                <div class="ls1">
-                    <div class="left"><img src="img/list2.png" alt=""></div>
-                    <div class="right">
-                        <div class="title">高速将构建新能源车快充网络</div>
-                        <div class="nr"><a href="">中国政府网指导意见，明确以发展纯电动汽车为主要战略。</a>
-                            <span>4.7万跟帖</span>
+                <div class="xinwen">
+                    <div class="ls1">
+                        <div class="left"><img src="img/list1.png" alt=""></div>
+                        <div class="right">
+                            <div class="title">脸谱阅后即焚应用排名下跌</div>
+                            <div class="nr"><a href="">阅后即焚服务一度跻身App Store前50名免费应用排行榜。</a>
+                                <span>8907跟帖</span>
+                            </div>
+                            <div class="zt"></div>
+
                         </div>
 
                     </div>
+                    <div class="ls1">
+                        <div class="left"><img src="img/list2.png" alt=""></div>
+                        <div class="right">
+                            <div class="title">高速将构建新能源车快充网络</div>
+                            <div class="nr"><a href="">中国政府网指导意见，明确以发展纯电动汽车为主要战略。</a>
+                                <span>4.7万跟帖</span>
+                            </div>
 
-                </div>
-                <div class="ls1">
-                    <div class="left"><img src="img/list3.png" alt=""></div>
-                    <div class="right">
-                        <div class="title">诺基亚北京工厂裁3千人或撤出</div>
-                        <div class="nr"><a href="">上周五微软也已启动诺基亚北京工厂裁员计划，或将迁离北京。</a>
                         </div>
-                        <div class="zb"></div>
 
                     </div>
+                    <div class="ls1">
+                        <div class="left"><img src="img/list3.png" alt=""></div>
+                        <div class="right">
+                            <div class="title">诺基亚北京工厂裁3千人或撤出</div>
+                            <div class="nr"><a href="">上周五微软也已启动诺基亚北京工厂裁员计划，或将迁离北京。</a>
+                            </div>
+                            <div class="zb"></div>
 
-                </div>
-                <div class="ls1">
-                    <div class="left"><img src="img/list4.png" alt=""></div>
-                    <div class="right">
-                        <div class="title">老罗致歉：锤子预约18万台？</div>
-                        <div class="nr"><a href="">锤子遇到严重的产能问题，而且良品率很低，品控太差。</a>
                         </div>
-                        <div class="sp"></div>
 
                     </div>
+                    <div class="ls1">
+                        <div class="left"><img src="img/list4.png" alt=""></div>
+                        <div class="right">
+                            <div class="title">老罗致歉：锤子预约18万台？</div>
+                            <div class="nr"><a href="">锤子遇到严重的产能问题，而且良品率很低，品控太差。</a>
+                            </div>
+                            <div class="sp"></div>
 
+                        </div>
+
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="swiper-slide index">
-            <div class="head1" style="background:#C30013;">
-                <div class="iconfont ls-back"></div>
-                <div class="ls-title">治理政治进行时</div>
-                <div class="iconfont ls-fx"></div>
-            </div>
-            <div class="banner" style="background:#e6e6e6;">
-                <div class="ls-ban">
-                    <img src="img/ls-banner.png" alt="">
-                </div>
-                <div class="ls-ban" style="background: #fff;height: 1.9rem;">
-                    <div class="l-b-top">
-                        <div class="l-b-bk">最新消息</div>
-                        <div class="l-b-bk">独家策划</div>
-                        <div class="l-b-bk">地方篇</div>
-                        <div class="l-b-bk">新理念</div>
-                    </div>
-                    <div class="l-b-top">
-                        <div class="l-b-bk">新思想</div>
-                        <div class="l-b-bk">新境界</div>
-                        <div class="l-b-bk">新实践</div>
-                        <div class="l-b-bk">更多</div>
+            <div class="swiper-slide">
+                <div class="swiper-container" id="swiper-slide3">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><a href=""><img src="img/banner2.jpg" alt=""></a></div>
                     </div>
                 </div>
-                <div class="fenye">
-                    <div class="fy-sz">1/11</div>
-                    <div class="fy-title">最新消息</div>
-                </div>
-            </div>
-            <div class="xinwen">
-                <div class="ls1">
-                    <div class="left"><img src="img/list1.png" alt=""></div>
-                    <div class="right">
-                        <div class="nr"><a href="">阅后即焚服务一度跻身App Store前50名免费应用排行榜。</a>
-                        </div>
-                        <div class="ls-gt">8907跟帖</div>
+                <div class="xinwen">
+                    <div class="ls1">
+                        <div class="left"><img src="img/list1.png" alt=""></div>
+                        <div class="right">
+                            <div class="title">脸谱阅后即焚应用排名下跌</div>
+                            <div class="nr"><a href="">阅后即焚服务一度跻身App Store前50名免费应用排行榜。</a>
+                                <span>8907跟帖</span>
+                            </div>
+                            <div class="zt"></div>
 
-                    </div>
-
-                </div>
-                <div class="ls1">
-                    <div class="left"><img src="img/list2.png" alt=""></div>
-                    <div class="right">
-                        <div class="nr"><a href="">中国政府网指导意见，明确以发展纯电动汽车为主要战略。</a>
-                        </div>
-                        <div class="ls-gt">4.7万跟帖</div>
-
-                    </div>
-
-                </div>
-                <div class="ls1">
-                    <div class="left"><img src="img/list3.png" alt=""></div>
-                    <div class="right">
-                        <div class="nr"><a href="">上周五微软也已启动诺基亚北京工厂裁员计划，或将迁离北京。</a>
                         </div>
 
                     </div>
+                    <div class="ls1">
+                        <div class="left"><img src="img/list2.png" alt=""></div>
+                        <div class="right">
+                            <div class="title">高速将构建新能源车快充网络</div>
+                            <div class="nr"><a href="">中国政府网指导意见，明确以发展纯电动汽车为主要战略。</a>
+                                <span>4.7万跟帖</span>
+                            </div>
 
-                </div>
-                <div class="ls1">
-                    <div class="left"><img src="img/list4.png" alt=""></div>
-                    <div class="right">
-                        <div class="nr"><a href="">锤子遇到严重的产能问题，而且良品率很低，品控太差。</a>
                         </div>
-                        <div class="ls-gt">964跟帖</div>
 
                     </div>
+                    <div class="ls1">
+                        <div class="left"><img src="img/list3.png" alt=""></div>
+                        <div class="right">
+                            <div class="title">诺基亚北京工厂裁3千人或撤出</div>
+                            <div class="nr"><a href="">上周五微软也已启动诺基亚北京工厂裁员计划，或将迁离北京。</a>
+                            </div>
+                            <div class="zb"></div>
 
-                </div>
-            </div>
-
-
-        </div>
-        <div class="swiper-slide index">
-            <div class="head1">
-                <div class="iconfont back"></div>
-                <div class="iconfont gt">33212跟帖</div>
-            </div>
-            <div class="biaoti">
-                <div class="t1">供应商福喜常年修改生产数据</div>
-                <div class="time">京华时报  07-21 02:04</div>
-            </div>
-            <div class="xiangqing">
-                <div class="xq-inner">
-                    <div class="img-box1"><img src="img/xw-img1.png" alt=""></div>
-                    <div class="xq-zx">过期回锅&nbsp;&nbsp;次品再加工&nbsp;&nbsp;上海福喜食品的劣质原料</div>
-                    <div class="xq-main">昨天东方卫视今日播放暗访报道，称记者卧底两个多月发现，麦当劳、肯德基、必胜客等国际知名快餐连锁店的肉类供应商——上海福喜食品有限公司存在大量采用过期变质肉类原料的行为。</div>
-                </div>
-                <div class="dianping">
-                    <div class="dp-inner">
-                        <div class="dp-xie">
-                            <div class="iconfont dp-icon"></div>
                         </div>
-                        <div class="iconfont fenxiang"></div>
-                        <div class="iconfont shoucang"></div>
+
                     </div>
-                </div>
+                    <div class="ls1">
+                        <div class="left"><img src="img/list4.png" alt=""></div>
+                        <div class="right">
+                            <div class="title">老罗致歉：锤子预约18万台？</div>
+                            <div class="nr"><a href="">锤子遇到严重的产能问题，而且良品率很低，品控太差。</a>
+                            </div>
+                            <div class="sp"></div>
 
-            </div>
-
-
-        </div>
-        <div class="swiper-slide index">
-            <div class="head1" style="background:#C30013;">
-                <div class="iconfont ls-back"></div>
-                <div class="ls-title">搜索</div>
-            </div>
-            <div class="ss">
-                <div class="ss-inner">
-                    <div class="sousuo">
-                        <div class="ss-shuru">
-                            <div class=""></div>
                         </div>
+
                     </div>
-                    <div class="ss-history"></div>
-                    <div class="ss-host"></div>
                 </div>
             </div>
         </div>
-
-        </div>
-    <!-- 如果需要分页器 -->
-    <div class="swiper-pagination"></div>
-
+    </div>
 </div>
-
 </body>
 </html>
 <script>
-    function resize(originSize,type){
-        var type=type||"x";
-        if(type=="x"){
-            var widths=document.documentElement.clientWidth;
-            var scale=widths/originSize*100;
-        }else if(type=="y"){
-            var heights=document.documentElement.clientHeight;
-            var scale=heights/originSize*100;
-        }
-        document.getElementsByTagName("html")[0].style.fontSize=scale+"px";
-    }
-    window.onload=function(){
-        resize(1136,"y");
-    }
-    var mySwiper = new Swiper ('.swiper-container', {
-        /*direction: 'vertical',
-         loop: true,*/
-        pagination: '.swiper-pagination',
-        onInit: function(swiper){ //Swiper2.x的初始化是onFirstInit
-            swiperAnimateCache(swiper); //隐藏动画元素
-            swiperAnimate(swiper); //初始化完成开始动画
-        },
-        onSlideChangeEnd: function(swiper){
-            swiperAnimate(swiper); //每个slide切换结束时也运行当前slide动画
+    var mySwiper1 = new Swiper('#swiper-container1',{
+        watchSlidesProgress : true,
+        watchSlidesVisibility : true,
+        slidesPerView:6,
+        onTap: function(){
+            mySwiper2.slideTo( mySwiper1.clickedIndex)
         }
     })
+    var mySwiper2 = new Swiper('#swiper-container2',{
+        pagination: '.swiper-pagination',
+        onSlideChangeStart: function(){
+            updateNavPosition();
+        }
+    })
+    function updateNavPosition(){
+        $('#swiper-container1 .active-nav').removeClass('active-nav')
+        var activeNav = $('#swiper-container1 .swiper-slide').eq(mySwiper2.activeIndex).addClass('active-nav');
+        if (!activeNav.hasClass('swiper-slide-visible')) {
+            if (activeNav.index()>mySwiper1.activeIndex) {
+                var thumbsPerNav = Math.floor(mySwiper1.width/activeNav.width())-1
+                mySwiper1.slideTo(activeNav.index()-thumbsPerNav)
+            }
+            else {
+                mySwiper1.slideTo(activeNav.index())
+            }
+        }
+    }
 
+    var mySwiper3 = new Swiper('#swiper-slide1',{
+        pagination: '.swiper-pagination',
+        autoplay : 5000,
+        loop : true,
+    })
 </script>
